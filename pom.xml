@@ -14,7 +14,6 @@
 
   <groupId>com.clearlydecoded</groupId>
   <artifactId>rest-messenger-demo</artifactId>
-  <packaging>war</packaging>
   <version>2.2.0</version>
 
   <properties>
