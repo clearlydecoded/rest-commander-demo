@@ -16,6 +16,13 @@
   <artifactId>rest-messenger-demo</artifactId>
   <version>2.2.0</version>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.3.RELEASE</version>
+    <relativePath/>
+  </parent>
+
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -78,6 +85,7 @@
           <execution>
             <goals>
               <goal>build-info</goal>
+              <goal>repackage</goal>
             </goals>
             <configuration>
               <additionalProperties>
@@ -86,6 +94,7 @@
                 <java.source>${maven.compiler.source}</java.source>
                 <java.target>${maven.compiler.target}</java.target>
               </additionalProperties>
+              <mainClass>com.clearlydecoded.messenger.demo.Application</mainClass>
             </configuration>
           </execution>
         </executions>
